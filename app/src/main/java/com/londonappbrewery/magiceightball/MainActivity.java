@@ -34,11 +34,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("magiceightball", "The button works greta!");
 
+                //Creating a random Number Generator
                 Random randomNumberGenerator = new Random();
 
+                //Using the Number Generator
                 int number = randomNumberGenerator.nextInt(5);
 
-                ballDisplay.setImageResource(ballArray[number]);
+                //Using the random number to pull a specific resource from the ballArray
+                int imageResourceId = ballArray[number];
+
+                //Displaying the ImageResource in the imageView
+                ballDisplay.setImageResource (imageResourceId);
+
+                // I can use tis to save up the two code lines!
+                // ballDisplay.setImageResource(ballArray[number]);
             }
         });
 
