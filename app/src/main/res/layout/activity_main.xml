@@ -31,12 +31,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="48dp"
         android:background="@android:color/holo_orange_dark"
         android:padding="15dp"
         android:text="Make everyday decisions easier!"
         android:textColor="@android:color/background_light"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/image_eightBall"
